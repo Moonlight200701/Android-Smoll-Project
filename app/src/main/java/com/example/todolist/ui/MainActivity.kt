@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.recyclerTask.adapter = adapter
-        upadteList()
+        updateList()
 
         insertListeners()
     }
@@ -34,17 +34,17 @@ class MainActivity : AppCompatActivity() {
         }
         adapter.listenerDelete = {
             TaskDataSource.deleteTask(it)
-            upadteList()
+            updateList()
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == CREATE_NEW_TASK && resultCode == Activity.RESULT_OK) upadteList()
+        if (requestCode == CREATE_NEW_TASK && resultCode == Activity.RESULT_OK) updateList()
 
     }
 
-    private fun upadteList() {
+    private fun updateList() {
         val list = TaskDataSource.getList()
         if (list.isEmpty()) {
             binding.emptyInclude.stateEmptyCs.visibility = View.VISIBLE
