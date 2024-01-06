@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">To do list</string>
-    <string name="task">タスク</string>
-    <string name="create_tasks">タスクを追加</string>
-    <string name="title">題名</string>
-    <string name="data">日</string>
-    <string name="timer">タイマー</string>
-    <string name="cancel">キャンセル</string>
-    <string name="new_task">新タスク</string>
-    <string name="to_edit">変更</string>
-    <string name="delete">消去</string>
-    <string name="empty_text">今日はタスクがないよ:></string>
+    <string name="task">Tasks</string>
+    <string name="create_tasks">Create Tasks</string>
+    <string name="title">Title</string>
+    <string name="data">Date</string>
+    <string name="timer">Timer</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_task">New Task</string>
+    <string name="to_edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="empty_text">Yo! No task today :></string>
 </resources>
